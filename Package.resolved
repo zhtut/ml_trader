@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "binance",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zhtut/binance.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "5f167b46a48de45243f8df69c7443e33156320cb"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zhtut/Networking.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "876ccace67cc2e3d37624083feb7c96d46135065"
+      }
+    },
+    {
+      "identity" : "ssencrypt",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zhtut/SSEncrypt.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "ffb09ba46b1cfc4297a9be9bf27f2be084efdbbb"
+      }
+    },
+    {
+      "identity" : "swift-crypto",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-crypto.git",
+      "state" : {
+        "revision" : "cc76b894169a3c86b71bac10c78a4db6beb7a9ad",
+        "version" : "3.2.0"
+      }
+    },
+    {
+      "identity" : "swift-log",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/apple/swift-log.git",
+      "state" : {
+        "revision" : "532d8b529501fb73a2455b179e0bbb6d49b652ed",
+        "version" : "1.5.3"
+      }
+    },
+    {
+      "identity" : "utilcore",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/zhtut/UtilCore.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8a467f3fe1cca5e0f027884f849588bdf8d0fb8e"
+      }
+    }
+  ],
+  "version" : 2
+}

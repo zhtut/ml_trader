@@ -1,0 +1,12 @@
+xcuserdata/
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+.build/
+Pods/
+Public/
+__pycache__/
+.idea/
+config.json
