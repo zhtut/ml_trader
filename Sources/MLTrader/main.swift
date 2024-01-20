@@ -14,6 +14,7 @@ Task {
             logInfo("初始化失败, MLTrader/Resources目录下没有发现config.json")
             exit(1)
         }
+        logInfo("config路径：\(configURL)")
         // 初始化binacne
         try await Setup.shared.setup(configURL)
         

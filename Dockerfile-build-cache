@@ -1,0 +1,25 @@
+# ================================
+# Build image
+# ================================
+FROM ml_trader-cache:latest as build
+
+#  docker compose up -d --force-recreate --build
+
+# Set up a build area
+WORKDIR /build
+
+
+# First just resolve dependencies.
+# This creates a cached layer that can be reused
+# as long as your Package.swift/Package.resolved
+# files do not change.
+COPY . .
+# resolve 可能会报某个库比较旧，还是用update比较好
+RUN swift package update
+#$([ -f ./Package.resolved ] && echo "--force-resolved-versions" || true)
+
+# Build everything, with optimizations
+RUN swift build -c release --static-swift-stdlib \
+    # Workaround for https://github.com/apple/swift/pull/68669
+    # This can be removed as soon as 5.9.1 is released, but is harmless if left in.
+    -Xlinker -u -Xlinker _swift_backtrace_isThunkFunction
