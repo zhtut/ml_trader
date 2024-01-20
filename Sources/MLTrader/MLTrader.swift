@@ -18,7 +18,7 @@ open class MLTrader {
     }
     
     func startTrader() async {
-        logInfo("DatabaseTrader 初始化开始")
+        logInfo("Trader 初始化开始")
         scheduledAction()
 //#if DEBUG
 //        Task {
